@@ -6,10 +6,10 @@ import (
 	"log"
 	"time"
 
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/firewall"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/hcclient"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/firewall"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/hcclient"
 
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/snapshot"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/snapshot"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 
@@ -17,18 +17,18 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hetznercloud/hcloud-go/hcloud"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/certificate"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/datacenter"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/floatingip"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/image"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/loadbalancer"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/location"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/network"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/rdns"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/server"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/servertype"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/sshkey"
-	"github.com/hetznercloud/terraform-provider-hcloud/internal/volume"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/certificate"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/datacenter"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/floatingip"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/image"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/loadbalancer"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/location"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/network"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/rdns"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/server"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/servertype"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/sshkey"
+	"github.com/hetznercloud/terraform-provider-hcloud/hcloud/volume"
 )
 
 // Build coordinates..
